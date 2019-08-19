@@ -34,6 +34,7 @@ class _QuizPageState extends State<QuizPage> {
   void checkAnswer(bool userPickedAnswer) {
     setState(() {
       if (quizBrain.isFinished()) {
+        //TO DO: display score and ask if the user wants to start the quiz again.
         Alert(
                 context: context,
                 title: "Finished",
@@ -113,6 +114,7 @@ class _QuizPageState extends State<QuizPage> {
           ),
         ),
         Row(
+          //TO DO: calculate the width of the row based on the number of questions.
           children: scoreKeeper,
         )
       ],
